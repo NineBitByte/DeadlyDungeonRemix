@@ -2,7 +2,8 @@
     "option_author": "Mark Alexander",
     "option_gameguid": "{E3E2F7E0-61E3-427D-81F1-69146109B0A4}",
     "option_game_speed": 30,
-    "option_sci_usesci": true
+    "option_sci_usesci": true,
+    "option_lastchanged": "10 March 2020 15:17:51"
 }←1225f6b0-ac20-43bd-a82e-be73fa0b6f4f|{
     "scaled": false,
     "targets": 461609314234257646
