@@ -1,8 +1,7 @@
 /// @DnDAction : YoYo Games.Audio.Play_Audio
 /// @DnDVersion : 1
-/// @DnDHash : 61E2FC98
+/// @DnDHash : 067945AD
 /// @DnDArgument : "soundid" "snd_door"
-/// @DnDSaveInfo : "soundid" "fe28f495-0520-4e69-a235-36b41da02597"
 audio_play_sound(snd_door, 0, 0);
 
 /// @DnDAction : YoYo Games.Rooms.Go_To_Room
