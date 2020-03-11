@@ -1,3 +1,7 @@
+/// @DnDAction : YoYo Games.Common.Execute_Code
+/// @DnDVersion : 1
+/// @DnDHash : 44D945B1
+/// @DnDArgument : "code" "if (isMoving == false)$(13_10){$(13_10)    if (keyboard_check(vk_right) )$(13_10)    {$(13_10)        isMoving = true;$(13_10)        moveTimer = gridSize;$(13_10)        speedX = moveSpeed;$(13_10)        speedY = 0;$(13_10)    }$(13_10)    if (keyboard_check(vk_left) )$(13_10)    {$(13_10)        isMoving = true;$(13_10)        moveTimer = gridSize;$(13_10)        speedX = -moveSpeed;$(13_10)        speedY = 0;$(13_10)    }$(13_10)    $(13_10)    if (keyboard_check(vk_up) )$(13_10)    {$(13_10)        isMoving = true;$(13_10)        moveTimer = gridSize;$(13_10)        speedX = 0;$(13_10)        speedY = -moveSpeed;$(13_10)    }           $(13_10)    $(13_10)    if (keyboard_check(vk_down) )$(13_10)    {$(13_10)        isMoving = true;$(13_10)        moveTimer = gridSize;$(13_10)        speedX = 0;$(13_10)        speedY = moveSpeed;$(13_10)    }      $(13_10)}$(13_10)$(13_10)if (isMoving == true)$(13_10){$(13_10)    x += speedX;$(13_10)    y += speedY;$(13_10)    $(13_10)    moveTimer -= moveSpeed;$(13_10)    if (moveTimer == 0) isMoving = false;$(13_10)}$(13_10)$(13_10)$(13_10)$(13_10)"
 if (isMoving == false)
 {
     if (keyboard_check(vk_right) )
@@ -40,6 +44,3 @@ if (isMoving == true)
     moveTimer -= moveSpeed;
     if (moveTimer == 0) isMoving = false;
 }
-
-
-
