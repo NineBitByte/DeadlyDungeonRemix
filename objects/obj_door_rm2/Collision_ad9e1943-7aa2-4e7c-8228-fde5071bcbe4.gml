@@ -2,14 +2,15 @@
 /// @DnDVersion : 1
 /// @DnDHash : 067945AD
 /// @DnDArgument : "soundid" "snd_door"
+/// @DnDSaveInfo : "soundid" "fe28f495-0520-4e69-a235-36b41da02597"
 audio_play_sound(snd_door, 0, 0);
 
 /// @DnDAction : YoYo Games.Rooms.Go_To_Room
 /// @DnDVersion : 1
 /// @DnDHash : 78320CD9
-/// @DnDArgument : "room" "rm_lobby"
-/// @DnDSaveInfo : "room" "52eb52be-5e59-400b-b73d-e3990812bd63"
-room_goto(rm_lobby);
+/// @DnDArgument : "room" "room2"
+/// @DnDSaveInfo : "room" "34d47db9-9679-4006-8647-c61084a11718"
+room_goto(room2);
 
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
