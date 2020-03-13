@@ -2,5 +2,5 @@
 /// @DnDVersion : 1
 /// @DnDHash : 0EEEB0A5
 /// @DnDArgument : "room" "room1"
-/// @DnDSaveInfo : "room" "34d47db9-9679-4006-8647-c61084a11718"
+/// @DnDSaveInfo : "room" "642e5930-fc95-4769-828b-65b482994a23"
 room_goto(room1);
