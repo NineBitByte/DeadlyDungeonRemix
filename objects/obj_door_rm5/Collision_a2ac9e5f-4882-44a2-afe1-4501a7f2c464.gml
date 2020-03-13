@@ -8,9 +8,9 @@ audio_play_sound(snd_door, 0, 0);
 /// @DnDAction : YoYo Games.Rooms.Go_To_Room
 /// @DnDVersion : 1
 /// @DnDHash : 12FF63A5
-/// @DnDArgument : "room" "rm_lobby"
-/// @DnDSaveInfo : "room" "52eb52be-5e59-400b-b73d-e3990812bd63"
-room_goto(rm_lobby);
+/// @DnDArgument : "room" "room5"
+/// @DnDSaveInfo : "room" "97baa710-96fc-459e-9079-d546e3afb268"
+room_goto(room5);
 
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
