@@ -2,7 +2,7 @@
 {
     "name": "rm_lobby",
     "id": "52eb52be-5e59-400b-b73d-e3990812bd63",
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,
