@@ -26,8 +26,8 @@ switch(l10E36B54_0)
 		/// @DnDArgument : "y" "260"
 		/// @DnDArgument : "y_relative" "1"
 		/// @DnDArgument : "caption" ""Treasure: ""
-		/// @DnDArgument : "text" "score"
-		draw_text_transformed(x + 240, y + 260, string("Treasure: ") + string(score), 1, 1, 0);
+		/// @DnDArgument : "text" "__dnd_score"
+		draw_text_transformed(x + 240, y + 260, string("Treasure: ") + string(__dnd_score), 1, 1, 0);
 		break;
 
 	/// @DnDAction : YoYo Games.Switch.Case
@@ -122,10 +122,10 @@ switch(l10E36B54_0)
 	
 		/// @DnDAction : YoYo Games.Instance Variables.Set_Score
 		/// @DnDVersion : 1
-		/// @DnDHash : 51A2335F
+		/// @DnDHash : 3EB086B4
 		/// @DnDParent : 53A41272
 		
-		score = real(0);
+		__dnd_score = real(0);
 	
 		/// @DnDAction : YoYo Games.Loops.Break
 		/// @DnDVersion : 1

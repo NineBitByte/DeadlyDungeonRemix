@@ -5,17 +5,7 @@
     "name": "obj_loot",
     "eventList": [
         {
-            "id": "61a401a7-9a78-41f8-9cd6-c0a0dedb92b7",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "0c266e6e-897f-4bbc-b0a3-406b4d7aa341"
-        },
-        {
-            "id": "7aae1101-0714-4cc6-a1a7-d2dc7a4de32e",
+            "id": "0a2e45c3-daaa-420a-b098-e284c4a57b99",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": true,
