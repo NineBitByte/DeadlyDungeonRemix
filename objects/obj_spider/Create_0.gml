@@ -7,9 +7,9 @@ image_speed = 0.3;
 /// @DnDAction : YoYo Games.Movement.Set_Speed
 /// @DnDVersion : 1
 /// @DnDHash : 2C6142F6
-/// @DnDArgument : "speed" "4"
+/// @DnDArgument : "speed" "3"
 /// @DnDArgument : "type" "2"
-vspeed = 4;
+vspeed = 3;
 
 /// @DnDAction : YoYo Games.Movement.Set_Direction_Fixed
 /// @DnDVersion : 1.1
