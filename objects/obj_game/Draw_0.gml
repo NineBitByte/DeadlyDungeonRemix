@@ -12,31 +12,6 @@ draw_set_font(fnt_lobby);
 var l10E36B54_0 = room;
 switch(l10E36B54_0)
 {
-	/// @DnDAction : YoYo Games.Switch.Case
-	/// @DnDVersion : 1
-	/// @DnDHash : 2AB58F18
-	/// @DnDParent : 10E36B54
-	/// @DnDArgument : "const" "room1"
-	case room1:
-		/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
-		/// @DnDVersion : 1
-		/// @DnDHash : 19A2F163
-		/// @DnDParent : 2AB58F18
-		/// @DnDArgument : "x" "240"
-		/// @DnDArgument : "x_relative" "1"
-		/// @DnDArgument : "y" "260"
-		/// @DnDArgument : "y_relative" "1"
-		/// @DnDArgument : "caption" ""Treasure: ""
-		/// @DnDArgument : "text" "score"
-		draw_text_transformed(x + 240, y + 260, string("Treasure: ") + string(score), 1, 1, 0);
-	
-		/// @DnDAction : YoYo Games.Loops.Break
-		/// @DnDVersion : 1
-		/// @DnDHash : 76926508
-		/// @DnDParent : 2AB58F18
-		break;
-		break;
-
 	/// @DnDAction : YoYo Games.Switch.Default
 	/// @DnDVersion : 1
 	/// @DnDHash : 03BBFDAE
@@ -51,14 +26,8 @@ switch(l10E36B54_0)
 		/// @DnDArgument : "y" "260"
 		/// @DnDArgument : "y_relative" "1"
 		/// @DnDArgument : "caption" ""Treasure: ""
-		/// @DnDArgument : "text" "score"
-		draw_text_transformed(x + 240, y + 260, string("Treasure: ") + string(score), 1, 1, 0);
-	
-		/// @DnDAction : YoYo Games.Loops.Break
-		/// @DnDVersion : 1
-		/// @DnDHash : 42C6DBA8
-		/// @DnDParent : 03BBFDAE
-		break;
+		/// @DnDArgument : "text" "__dnd_score"
+		draw_text_transformed(x + 240, y + 260, string("Treasure: ") + string(__dnd_score), 1, 1, 0);
 		break;
 
 	/// @DnDAction : YoYo Games.Switch.Case
@@ -67,13 +36,6 @@ switch(l10E36B54_0)
 	/// @DnDParent : 10E36B54
 	/// @DnDArgument : "const" "rm_lobby"
 	case rm_lobby:
-		/// @DnDAction : YoYo Games.Instance Variables.Set_Score
-		/// @DnDVersion : 1
-		/// @DnDHash : 17ACBAD9
-		/// @DnDParent : 53A41272
-		
-		__dnd_score = real(0);
-	
 		/// @DnDAction : YoYo Games.Drawing.Set_Alignment
 		/// @DnDVersion : 1.1
 		/// @DnDHash : 5D97BA9A
@@ -108,10 +70,17 @@ switch(l10E36B54_0)
 		/// @DnDParent : 53A41272
 		/// @DnDArgument : "x" "room_width /2"
 		/// @DnDArgument : "y" "390"
-		/// @DnDArgument : "xscale" "2"
-		/// @DnDArgument : "yscale" "2"
 		/// @DnDArgument : "caption" ""Arrow Keys to Move""
-		draw_text_transformed(room_width /2, 390, string("Arrow Keys to Move") + "", 2, 2, 0);
+		draw_text_transformed(room_width /2, 390, string("Arrow Keys to Move") + "", 1, 1, 0);
+	
+		/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
+		/// @DnDVersion : 1
+		/// @DnDHash : 259DDD32
+		/// @DnDParent : 53A41272
+		/// @DnDArgument : "x" "room_width /2"
+		/// @DnDArgument : "y" "420"
+		/// @DnDArgument : "caption" ""Press Enter to Start""
+		draw_text_transformed(room_width /2, 420, string("Press Enter to Start") + "", 1, 1, 0);
 	
 		/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
 		/// @DnDVersion : 1
@@ -150,6 +119,13 @@ switch(l10E36B54_0)
 		/// @DnDArgument : "y" "260"
 		/// @DnDArgument : "caption" ""Will you steal the great treasure, or be a victim of this cursed place?""
 		draw_text_transformed(room_width /2, 260, string("Will you steal the great treasure, or be a victim of this cursed place?") + "", 1, 1, 0);
+	
+		/// @DnDAction : YoYo Games.Instance Variables.Set_Score
+		/// @DnDVersion : 1
+		/// @DnDHash : 52BC8C2C
+		/// @DnDParent : 53A41272
+		
+		__dnd_score = real(0);
 	
 		/// @DnDAction : YoYo Games.Loops.Break
 		/// @DnDVersion : 1
