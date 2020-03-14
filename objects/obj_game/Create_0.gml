@@ -12,9 +12,3 @@ draw_set_font(fnt_lobby);
 /// @DnDArgument : "loop" "1"
 /// @DnDSaveInfo : "soundid" "675ec627-a846-4c13-a01e-02c685cda72f"
 audio_play_sound(snd_ingame_music, 0, 1);
-
-/// @DnDAction : YoYo Games.Instance Variables.Set_Score
-/// @DnDVersion : 1
-/// @DnDHash : 39C94AF4
-
-__dnd_score = real(0);
