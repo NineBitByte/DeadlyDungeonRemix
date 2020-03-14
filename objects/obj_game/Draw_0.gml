@@ -14,91 +14,26 @@ switch(l10E36B54_0)
 {
 	/// @DnDAction : YoYo Games.Switch.Case
 	/// @DnDVersion : 1
-	/// @DnDHash : 53A41272
+	/// @DnDHash : 2AB58F18
 	/// @DnDParent : 10E36B54
-	/// @DnDArgument : "const" "rm_lobby"
-	case rm_lobby:
-		/// @DnDAction : YoYo Games.Drawing.Set_Alignment
-		/// @DnDVersion : 1.1
-		/// @DnDHash : 5D97BA9A
-		/// @DnDParent : 53A41272
-		/// @DnDArgument : "halign" "fa_center"
-		draw_set_halign(fa_center);
-		draw_set_valign(fa_top);
-	
+	/// @DnDArgument : "const" "room1"
+	case room1:
 		/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
 		/// @DnDVersion : 1
-		/// @DnDHash : 3DC72947
-		/// @DnDParent : 53A41272
-		/// @DnDArgument : "x" "room_width /2"
-		/// @DnDArgument : "y" "40"
-		/// @DnDArgument : "xscale" "3"
-		/// @DnDArgument : "yscale" "3"
-		/// @DnDArgument : "caption" ""DEADLY DUNGEON ""
-		draw_text_transformed(room_width /2, 40, string("DEADLY DUNGEON ") + "", 3, 3, 0);
-	
-		/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
-		/// @DnDVersion : 1
-		/// @DnDHash : 1D9202D6
-		/// @DnDParent : 53A41272
-		/// @DnDArgument : "x" "room_width /2"
-		/// @DnDArgument : "y" "120"
-		/// @DnDArgument : "xscale" "2"
-		/// @DnDArgument : "yscale" "2"
-		/// @DnDArgument : "caption" ""MS DOS 1984""
-		draw_text_transformed(room_width /2, 120, string("MS DOS 1984") + "", 2, 2, 0);
-	
-		/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
-		/// @DnDVersion : 1
-		/// @DnDHash : 2CBDF41C
-		/// @DnDParent : 53A41272
-		/// @DnDArgument : "x" "room_width /2"
-		/// @DnDArgument : "y" "180"
-		/// @DnDArgument : "caption" ""Collect as much treasure as you dare!""
-		draw_text_transformed(room_width /2, 180, string("Collect as much treasure as you dare!") + "", 1, 1, 0);
-	
-		/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
-		/// @DnDVersion : 1
-		/// @DnDHash : 0D8D34EB
-		/// @DnDParent : 53A41272
-		/// @DnDArgument : "x" "room_width /2"
-		/// @DnDArgument : "y" "220"
-		/// @DnDArgument : "caption" ""Beware, danger awaits!""
-		draw_text_transformed(room_width /2, 220, string("Beware, danger awaits!") + "", 1, 1, 0);
-	
-		/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
-		/// @DnDVersion : 1
-		/// @DnDHash : 7198517C
-		/// @DnDParent : 53A41272
-		/// @DnDArgument : "x" "room_width /2"
+		/// @DnDHash : 19A2F163
+		/// @DnDParent : 2AB58F18
+		/// @DnDArgument : "x" "240"
+		/// @DnDArgument : "x_relative" "1"
 		/// @DnDArgument : "y" "260"
-		/// @DnDArgument : "caption" ""Will you steal the great treasure, or be a victim of this cursed place?""
-		draw_text_transformed(room_width /2, 260, string("Will you steal the great treasure, or be a victim of this cursed place?") + "", 1, 1, 0);
-	
-		/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
-		/// @DnDVersion : 1
-		/// @DnDHash : 00CD4A26
-		/// @DnDParent : 53A41272
-		/// @DnDArgument : "x" "room_width /2"
-		/// @DnDArgument : "y" "300"
-		/// @DnDArgument : "caption" ""Many advenurers have tried, none have returned...""
-		draw_text_transformed(room_width /2, 300, string("Many advenurers have tried, none have returned...") + "", 1, 1, 0);
-	
-		/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
-		/// @DnDVersion : 1
-		/// @DnDHash : 7AB313F6
-		/// @DnDParent : 53A41272
-		/// @DnDArgument : "x" "room_width /2"
-		/// @DnDArgument : "y" "390"
-		/// @DnDArgument : "xscale" "2"
-		/// @DnDArgument : "yscale" "2"
-		/// @DnDArgument : "caption" ""Arrow Keys to Move""
-		draw_text_transformed(room_width /2, 390, string("Arrow Keys to Move") + "", 2, 2, 0);
+		/// @DnDArgument : "y_relative" "1"
+		/// @DnDArgument : "caption" ""Treasure: ""
+		/// @DnDArgument : "text" "score"
+		draw_text_transformed(x + 240, y + 260, string("Treasure: ") + string(score), 1, 1, 0);
 	
 		/// @DnDAction : YoYo Games.Loops.Break
 		/// @DnDVersion : 1
-		/// @DnDHash : 3A27E85A
-		/// @DnDParent : 53A41272
+		/// @DnDHash : 76926508
+		/// @DnDParent : 2AB58F18
 		break;
 		break;
 
@@ -123,6 +58,103 @@ switch(l10E36B54_0)
 		/// @DnDVersion : 1
 		/// @DnDHash : 42C6DBA8
 		/// @DnDParent : 03BBFDAE
+		break;
+		break;
+
+	/// @DnDAction : YoYo Games.Switch.Case
+	/// @DnDVersion : 1
+	/// @DnDHash : 53A41272
+	/// @DnDParent : 10E36B54
+	/// @DnDArgument : "const" "rm_lobby"
+	case rm_lobby:
+		/// @DnDAction : YoYo Games.Instance Variables.Set_Score
+		/// @DnDVersion : 1
+		/// @DnDHash : 17ACBAD9
+		/// @DnDParent : 53A41272
+		
+		__dnd_score = real(0);
+	
+		/// @DnDAction : YoYo Games.Drawing.Set_Alignment
+		/// @DnDVersion : 1.1
+		/// @DnDHash : 5D97BA9A
+		/// @DnDParent : 53A41272
+		/// @DnDArgument : "halign" "fa_center"
+		draw_set_halign(fa_center);
+		draw_set_valign(fa_top);
+	
+		/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
+		/// @DnDVersion : 1
+		/// @DnDHash : 1D9202D6
+		/// @DnDParent : 53A41272
+		/// @DnDArgument : "x" "room_width /2"
+		/// @DnDArgument : "y" "120"
+		/// @DnDArgument : "xscale" "2"
+		/// @DnDArgument : "yscale" "2"
+		/// @DnDArgument : "caption" ""MS DOS 1984""
+		draw_text_transformed(room_width /2, 120, string("MS DOS 1984") + "", 2, 2, 0);
+	
+		/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
+		/// @DnDVersion : 1
+		/// @DnDHash : 00CD4A26
+		/// @DnDParent : 53A41272
+		/// @DnDArgument : "x" "room_width /2"
+		/// @DnDArgument : "y" "300"
+		/// @DnDArgument : "caption" ""Many advenurers have tried, none have returned...""
+		draw_text_transformed(room_width /2, 300, string("Many advenurers have tried, none have returned...") + "", 1, 1, 0);
+	
+		/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
+		/// @DnDVersion : 1
+		/// @DnDHash : 7AB313F6
+		/// @DnDParent : 53A41272
+		/// @DnDArgument : "x" "room_width /2"
+		/// @DnDArgument : "y" "390"
+		/// @DnDArgument : "xscale" "2"
+		/// @DnDArgument : "yscale" "2"
+		/// @DnDArgument : "caption" ""Arrow Keys to Move""
+		draw_text_transformed(room_width /2, 390, string("Arrow Keys to Move") + "", 2, 2, 0);
+	
+		/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
+		/// @DnDVersion : 1
+		/// @DnDHash : 2CBDF41C
+		/// @DnDParent : 53A41272
+		/// @DnDArgument : "x" "room_width /2"
+		/// @DnDArgument : "y" "180"
+		/// @DnDArgument : "caption" ""Collect as much treasure as you dare!""
+		draw_text_transformed(room_width /2, 180, string("Collect as much treasure as you dare!") + "", 1, 1, 0);
+	
+		/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
+		/// @DnDVersion : 1
+		/// @DnDHash : 3DC72947
+		/// @DnDParent : 53A41272
+		/// @DnDArgument : "x" "room_width /2"
+		/// @DnDArgument : "y" "40"
+		/// @DnDArgument : "xscale" "3"
+		/// @DnDArgument : "yscale" "3"
+		/// @DnDArgument : "caption" ""DEADLY DUNGEON ""
+		draw_text_transformed(room_width /2, 40, string("DEADLY DUNGEON ") + "", 3, 3, 0);
+	
+		/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
+		/// @DnDVersion : 1
+		/// @DnDHash : 0D8D34EB
+		/// @DnDParent : 53A41272
+		/// @DnDArgument : "x" "room_width /2"
+		/// @DnDArgument : "y" "220"
+		/// @DnDArgument : "caption" ""Beware, danger awaits!""
+		draw_text_transformed(room_width /2, 220, string("Beware, danger awaits!") + "", 1, 1, 0);
+	
+		/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
+		/// @DnDVersion : 1
+		/// @DnDHash : 7198517C
+		/// @DnDParent : 53A41272
+		/// @DnDArgument : "x" "room_width /2"
+		/// @DnDArgument : "y" "260"
+		/// @DnDArgument : "caption" ""Will you steal the great treasure, or be a victim of this cursed place?""
+		draw_text_transformed(room_width /2, 260, string("Will you steal the great treasure, or be a victim of this cursed place?") + "", 1, 1, 0);
+	
+		/// @DnDAction : YoYo Games.Loops.Break
+		/// @DnDVersion : 1
+		/// @DnDHash : 3A27E85A
+		/// @DnDParent : 53A41272
 		break;
 		break;
 }
